@@ -11,6 +11,7 @@ class Base
       config = Base.config['db']
       ::Mysql2::Client.new(
         host: config['host'],
+        port: config['port'],
         username: config['user'],
         password: config['password'],
         encoding: config['encoding'],
